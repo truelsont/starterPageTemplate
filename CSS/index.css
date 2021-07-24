@@ -1,0 +1,140 @@
+body{
+	width : 100%; 
+	height : 100%; 	
+	margin : auto;
+
+	text-transform : uppercase; 	
+	font-family : "Lucida Console"; 
+        background-image : url('../Img/indexWP.png');
+	background-size : 100% auto;  
+	margin : 0; 	
+}
+
+.navBar{
+	gap : 2%; 
+	display : flex;
+       	flex-direction : horizontal; 	
+	 background : purple; 
+	   
+	 font-size : 100%;
+	 height : 15%;
+	overflow: visible; 
+       align-items : left; 	
+	 
+	 transition: all 1s; 
+}
+
+.navBar:hover{
+       	border :solid 1px; 
+	border-color : black;
+	background : purple; 	
+
+}
+
+.navSection{
+	color :  rgb(190,200,201); 
+	height : 100%; 
+	display : flex;
+}
+
+.widges{
+	position :absolute;
+	top: 55%;
+	left: 25%; 
+	transform : translate(-50%, -50%); 
+	display : flex;
+       flex-direction : column;        
+	gap: 4px;
+       transition: all  2s; 	
+
+	align-items : center;
+	overflow: visible; 	
+	font-size: 100%;
+
+	/*
+	display : grid
+	grid-auto-rows : 20%;
+	grid-template-columns : 80%;     
+	gap : 2%;*/ 
+} 
+
+.widges:hover{
+	left : 40%; 
+}
+
+.widges:hover .widge {
+	width : 0; 
+	height : 0;
+	font-size : 0; 	
+}
+/*Should have 4 widges */
+
+.widge{
+	font-size : 100%; 
+	position : relative; 
+	width : calc(.2 * 100vw); 
+	height : calc(.1 * 100vh);
+	
+	color : rgb(190,200,201);  
+	background-color: #330075; 
+	border: solid  0px;
+
+	transition : all 1s; 
+}
+
+.widges .widge:hover{
+	width : calc(.5 * 100vw); 
+	height : calc(.4 * 100vw);
+	background-color : #7b9284;  
+	font-size : 100%;
+       border: solid 5px; 
+	border-color : black;   
+   	color: black; 	
+}
+
+
+.title{
+	font-size: 100%;
+	font-family : "Lucida Console"; 
+	text-align: center; 
+	text-justify: center;
+}
+
+.content{
+	font-size : 0px; 
+	font-family : "Lucidea Console"; 
+	display:grid; 
+	grid-template-columns: auto auto; 
+	transition : all 1s; 
+}
+
+.widge:hover .content{
+	font-size : 100%;
+}
+
+.right{
+	border : black 1px solid; 
+	font-size : 0px; 
+	background : purple; 
+	position : absolute; 
+	top: 50%; 
+	left : 97%; 
+	height : 80%; 
+	width : 2%; 
+	transform : translate(-50%,-50%);
+
+	transition : all 2s; 
+	text-align : center; 
+	text-justify : center; 
+
+}
+
+.right:hover{
+	font-size : 100%;
+	background : gray;
+	width : 50%; 
+	left : 73%;
+	border : solid 4px black; 
+
+}
+
